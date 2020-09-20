@@ -104,6 +104,6 @@ class ImageSourceBottomSheet extends StatelessWidget {
               onTap: () => _onPickImage(ImageSource.gallery),
             )
           ],
-    );
+    ));
   }
 }
