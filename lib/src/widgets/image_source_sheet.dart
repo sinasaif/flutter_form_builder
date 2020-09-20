@@ -89,7 +89,7 @@ class ImageSourceBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    returnContainer(
+    return Container(
         padding: bottomSheetPadding,
         child: Wrap(
           children: <Widget>[
