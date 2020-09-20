@@ -89,9 +89,7 @@ class ImageSourceBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async => !_isPickingImage,
-      child: Container(
+    returnContainer(
         padding: bottomSheetPadding,
         child: Wrap(
           children: <Widget>[
@@ -106,7 +104,6 @@ class ImageSourceBottomSheet extends StatelessWidget {
               onTap: () => _onPickImage(ImageSource.gallery),
             )
           ],
-        ),
     );
   }
 }
